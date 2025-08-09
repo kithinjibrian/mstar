@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "mstar"
+version = "0.1.0"
+description = ""
+authors = ["kithinjibrian <kithinjibrian369@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+litellm = "^1.74.15.post1"
+python-dotenv = "^1.1.1"
+pydantic-settings = "^2.10.1"
+pydantic = "^2.11.7"
+docstring-parser = "^0.17.0"
+tavily-python = "^0.7.10"
+ipython = "^9.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+run-app = "app.main:main"
